@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	margin: 10% auto;
+	height: 100%;
+	background: url('fondo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	justify-content: center;
+	align-items: center;
+}
+
+body::before{
+	content:"";
+	width:100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(135deg,navy,lightblue,navy,purple,pink,purple);
+	opacity: 0.8;
+	z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 5% auto;
+    }
+}
+
+h1 {
+    position: relative;
+    margin: 0% auto;
+    width: 98%;
+    background: rgb(252, 252, 252, 0.5);
+    text-align: center;
+    color: navy;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 0,8em;
+    }
+}
+
+ol {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.contenedor-libros {
+    border: solid blue 0.5px;
+    text-align: center;
+    width: 98%;
+    margin: 5px auto;
+    background: rgb(252, 252, 252, 0.5);
+}
+
+.first-day-mes-1 {
+    grid-column-start: 6;
+}
+.first-day-mes-2 {
+    grid-column-start: 2;
+}
+.first-day-mes-3 {
+    grid-column-start: 2;
+}
+.first-day-mes-4 {
+    grid-column-start: 5;
+}
+.first-day-mes-5 {
+    grid-column-start: 7;
+}
+.first-day-mes-6 {
+    grid-column-start: 3;
+}
+.first-day-mes-7 {
+    grid-column-start: 5;
+}
+.first-day-mes-8 {
+    grid-column-start: 1;
+}
+.first-day-mes-9 {
+    grid-column-start: 3;
+}
+.first-day-mes-10 {
+    grid-column-start: 6;
+}
+.first-day-mes-11 {
+    grid-column-start: 2;
+}
+.first-day-mes-12 {
+    grid-column-start: 4;
+}
+
+
+.day-name {
+    position: relative;
+    color: navy;
+    width: 98%;
+    border: solid blue 0.5px;
+    background: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .day-name {
+        font-size: 1em;
+    }
+}
+
+.libros {
+    height: 98%;
+    font-size: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .libros {
+        font-size: 0.8em;
+    }
+}
+
+a {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .a {
+        font-size: 1em;
+    }
+}
+
+h5 {
+    color: navy;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    background: rgb(221, 147, 147,0.3);
+}
+
+@media screen and (max-width: 768px) {
+    h5 {
+        font-size: 1em;
+    }
+}
